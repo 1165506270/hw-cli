@@ -1,7 +1,3 @@
-'use strict';
+#! /usr/bin/env node
 
-module.exports = core;
-
-function core() {
-    // TODO11
-}
+console.log('hello word')
