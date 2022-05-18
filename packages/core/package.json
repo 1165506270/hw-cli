@@ -1,6 +1,6 @@
 {
   "name": "@hw-cli/core",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "> TODO: description",
   "author": "ztxiao <ztxiao@ccitc.net.cn>",
   "homepage": "",
@@ -24,6 +24,6 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@hw-cli/utils": "^0.0.0"
+    "@hw-cli/utils": "^1.0.0"
   }
 }
