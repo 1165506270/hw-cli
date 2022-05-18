@@ -1,6 +1,6 @@
 {
   "name": "@hw-cli/core",
-  "version": "1.0.3",
+  "version": "1.0.2",
   "description": "> TODO: description",
   "author": "ztxiao <ztxiao@ccitc.net.cn>",
   "homepage": "",
@@ -26,5 +26,5 @@
   "dependencies": {
     "@hw-cli/utils": "^1.0.0"
   },
-  "gitHead": "a0060efad287b5c3eb4bca652761ce12150a0716"
+  "gitHead": "afad7d63ec58915494e2f78627589e75fff9a492"
 }
