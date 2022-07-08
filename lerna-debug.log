@@ -1,0 +1,6 @@
+39 error Error: Command failed with exit code 128: git tag v1.0.3 -m v1.0.3
+39 error fatal: 标签 'v1.0.3' 已存在
+39 error     at makeError (/usr/local/lib/node_modules/lerna/node_modules/execa/lib/error.js:60:11)
+39 error     at handlePromise (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:118:26)
+39 error     at processTicksAndRejections (internal/process/task_queues.js:95:5)
+39 error     at async Promise.all (index 0)

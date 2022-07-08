@@ -1,0 +1,29 @@
+{
+  "name": "@hw-cli/log",
+  "version": "1.0.4",
+  "description": "> TODO: description",
+  "author": "ztxiao <ztxiao@ccitc.net.cn>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/log.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmmirror.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.quickf.net:8929/ztxiao/hw-cli.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "npmlog": "^6.0.2"
+  }
+}
