@@ -1,6 +1,6 @@
 {
   "name": "@hw-cli/package",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "> TODO: description",
   "author": "ztxiao <ztxiao@ccitc.net.cn>",
   "homepage": "",
@@ -24,8 +24,8 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@hw-cli/format-path": "^1.0.4",
-    "@hw-cli/utils": "^1.0.0",
+    "@hw-cli/format-path": "^1.0.5",
+    "@hw-cli/utils": "^1.0.5",
     "npminstall": "^6.4.0"
   }
 }
