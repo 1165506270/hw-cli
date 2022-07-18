@@ -14,7 +14,7 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "https://registry.npmmirror.com"
+    "registry": "http://192.168.55.226:8082/repository/quickf_node_module"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,6 @@
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
-  }
+  },
+  "gitHead": "7d98a3ee5782a964537dbc6822e03a9d9b5cf6b3"
 }
