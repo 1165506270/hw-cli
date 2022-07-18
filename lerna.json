@@ -2,7 +2,8 @@
   "packages": [
     "core/*",
     "commands/*",
-    "utils/*"
+    "utils/*",
+    "models/*"
   ],
   "npmClient": "npm",
   "command": {

@@ -13,6 +13,7 @@ const { Command, Argument } = require('commander');
 const pkg = require('../package.json')
 const log = require('@hw-cli/log')
 const constant = require('./consts')
+const exec = require('@hw-cli/exec')
 
 const context = {
   version: pkg.version,
@@ -57,19 +58,23 @@ const checkEnv = () => {
 const createDefaultConfig = () => {
     // const cliHome = 
 }
-
 const core = () => {
     try {
         checkNodeVersion()
         checkRoot()
         checkUserHome()
         checkEnv()
-        const args = hideBin(process.argv)
         const program = new Command()
-        program.name('string-utils')
+        program.name('hw-cli')
             .description('cli to some')
             .version(pkg.version)
-        program.option('-d --debug')
+            .option('-d, --debug', '是否开启调试模式', false)
+            .option('-tp --targetPath <targetPath>', '')
+        program.command('init')
+            .argument('<projectName>', '项目名称')
+            .action(exec)
+        program.command('exec')
+            .action(exec)
         program.command('split')
             .description('切分字符串')
             .argument('<string...>', 'string to split')
@@ -89,11 +94,14 @@ const core = () => {
                 log.info(strArray.join(options.separator))
             })
         program.on('option:debug', function() {
-            if(program.debug) {
+            if(this.opts().debug) {
                 process.env.LOG_LEVEL = 'verbose'
                 log.level = process.env.LOG_LEVEL
                 console.log(process.env.LOG_LEVEL)
             }
+        })
+        program.on('option:targetPath', function() {
+            process.env.CLI_TARGET_PATH = this.opts().targetPath || ''
         })
         program.parse()
        

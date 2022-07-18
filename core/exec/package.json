@@ -1,6 +1,6 @@
 {
-  "name": "@hw-cli/utils",
-  "version": "1.0.0",
+  "name": "@hw-cli/exec",
+  "version": "1.0.4",
   "description": "> TODO: description",
   "author": "ztxiao <ztxiao@ccitc.net.cn>",
   "homepage": "",
@@ -14,16 +14,16 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "http://192.168.55.226:8082/repository/quickf_node_module"
+    "registry": "https://registry.npmmirror.com"
   },
   "repository": {
     "type": "git",
-    "url": "http://192.168.55.226:8082/repository/quickf_node_module"
+    "url": "https://git.quickf.net:8929/ztxiao/hw-cli.git"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "find-up": "5.0.0"
+    "@hw-cli/package": "^1.0.4"
   }
 }

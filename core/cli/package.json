@@ -27,6 +27,8 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
+    "@hw-cli/exec": "^1.0.4",
+    "@hw-cli/init": "^1.0.4",
     "@hw-cli/log": "^1.0.4",
     "@hw-cli/utils": "^1.0.0",
     "colors": "^1.4.0",
